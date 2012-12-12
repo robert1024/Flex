@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			import com.bigshi.flex.components.checkboxdg.CheckEvent;
+			private function doCheck():void{
+				var checked:Boolean = cb.selected;
+				dispatchEvent(new CheckEvent("check",checked,true));
+			}
+		]]>
+	</mx:Script>
+	<mx:Metadata>
+		[Event(name="check",type="com.bigshi.flex.components.checkboxdg.CheckEvent")]
+	</mx:Metadata>
+	<mx:CheckBox id="cb" label="On Project" click="doCheck()"/>
+</mx:HBox>

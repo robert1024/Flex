@@ -1,0 +1,10 @@
+package flex.events
+{
+	public class AllCheckEvent
+	{
+		public function AllCheckEvent()
+		{
+		}
+
+	}
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			import flex.events.CheckEvent;
+			private function doCheck():void{
+				Alert.show(cb.selected+"");
+				var checked:Boolean = cb.selected;
+				var e:CheckEvent = new CheckEvent("check",ture);
+				dispatchEvent(new CheckEvent("check",checked,true));
+			}
+		]]>
+	</mx:Script>
+	<mx:Metadata>
+		[Event(name="check",type="flex.events.CheckEvent")]
+	</mx:Metadata>
+	<mx:CheckBox id="cb" label="On Project" click="doCheck()"/>
+</mx:HBox>

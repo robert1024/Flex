@@ -1,0 +1,13 @@
+package flex.events
+{
+	import flash.events.Event;
+
+	public class AllCheckEvent extends Event
+	{
+		public function AllCheckEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+		{
+			super(type, bubbles, cancelable);
+		}
+		
+	}
+}

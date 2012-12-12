@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute">
+	
+	<mx:Script>
+		<![CDATA[
+			import mx.collections.ArrayCollection;
+			[Bindable]
+			private var dataSet:ArrayCollection = new ArrayCollection([
+				{name:"Peter",age:35},
+				{name:"Bob",age:50},
+				{name:"Tracy",age:18}
+			]);
+		]]>
+	</mx:Script>
+	
+</mx:Application>

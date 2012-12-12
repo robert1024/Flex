@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute">
+	
+	<!--
+	<mx:Script>
+		<![CDATA[
+			import flex.events.CheckEvent;
+			import mx.collections.ArrayCollection;
+			[Bindable]
+			private var dataSet:ArrayCollection = new ArrayCollection([
+				{name:"Peter",age:35},
+				{name:"Bob",age:50},
+				{name:"Tracy",age:18}
+			]);
+			[Bindable]
+			private var numOfOnProject:int = 0;
+			
+			private function init():void{
+				dg.addEventListener("check",checkHandler);
+			}
+			
+			private function checkHandler(event:CheckEvent):void{
+				if(event.checked){
+					numOfOnProject++;
+				}else{
+					numOfOnProject-;
+				}
+				
+			
+			}
+		]]>
+	</mx:Script>
+	
+	<mx:Canvas label="Demo" width="662" height="540">
+		<mx:DataGrid id="dg" dataProvider="{dataSet}" width="528" height="393">
+			<mx:columns>
+				<mx:DataGridColumn headerText="Status" itemRenderer="flex.views.CheckBoxView" width="30"/>
+				<mx:DataGridColumn dataField="name" headerText="Name" width="30"/>
+				<mx:DataGridColumn dataField="age" headerText="Age" width="30"/>
+			</mx:columns>
+		</mx:DataGrid>
+		<mx:Label text="#: {numOfOnProject}" color="red" fontSize="20" y="429"/>
+	</mx:Canvas>
+	-->
+	<mx:Script>
+		<![CDATA[
+			[Bindable]
+			private var dp:Array = [
+			{From:"Steven",Subject:"Hello from Steven",isSelected:false},
+			{From:"Steven2",Subject:"Hello from Steven2",isSelected:false},
+			{From:"Steven3",Subject:"Hello from Steven3",isSelected:false}
+		]]>
+	</mx:Script>
+	
+	
+</mx:Application>

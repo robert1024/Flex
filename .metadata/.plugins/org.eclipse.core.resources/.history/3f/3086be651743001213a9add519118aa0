@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" creationComplete="init()">
+	
+	<mx:Script>
+		<![CDATA[
+			import flex.events.CheckEvent;
+			import mx.collections.ArrayCollection;
+			[Bindable]
+			private var dataSet:ArrayCollection = new ArrayCollection([
+				{name:"Peter",age:35},
+				{name:"Bob",age:50},
+				{name:"Tracy",age:18}
+			]);
+			[Bindable]
+			private var numOfOnProject:int = 0;
+			
+			private function init():void{
+				dg.addEventListener("check",checkHandler);
+			}
+			
+			private function checkHandler(event:CheckEvent):void{
+				if(event.checked)numOfOnProject++;
+				else numOfOnProject--;
+			
+			}
+		]]>
+	</mx:Script>
+	
+	<mx:Canvas label="Demo">
+		<mx:DataGrid id="dg" dataProvider="{dataSet}">
+			<mx:columns>
+				<mx:DataGridColumn headerText="Status" itemRenderer="flex.views.CheckBoxView"/>
+				<mx:DataGridColumn dataField="name" headerText="Name"/>
+				<mx:DataGridColumn dataField="age" headerText="Age"/>
+			</mx:columns>
+		</mx:DataGrid>
+		<mx:Label text="#: {numOfOnProject}" color="red" fontSize="20"/>
+	</mx:Canvas>
+</mx:Application>

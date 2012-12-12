@@ -1,0 +1,21 @@
+package flex.events
+{
+	import flash.events.Event;
+
+	public class CheckEvent extends Event
+	{
+		
+		public static const CHECK:String = "check";
+		public var checked:Boolean;
+		public function CheckEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+		{
+			super(type, bubbles, cancelable);
+			this.checked = checked;
+		}
+		
+		override public function clone():Event{
+			return new CheckEvent(type,checked);
+		}
+		
+	}
+}

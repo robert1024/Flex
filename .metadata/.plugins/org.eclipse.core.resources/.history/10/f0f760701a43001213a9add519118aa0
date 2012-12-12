@@ -1,0 +1,13 @@
+package flex.components
+{
+	import mx.controls.dataGridClasses.DataGridColumn;
+
+	public class CheckBoxHeaderColumn extends DataGridColumn
+	{
+		public function CheckBoxHeaderColumn(columnName:String=null)
+		{
+			super(columnName);
+		}
+		
+	}
+}

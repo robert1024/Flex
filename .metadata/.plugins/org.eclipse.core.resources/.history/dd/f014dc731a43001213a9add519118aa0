@@ -1,0 +1,15 @@
+package flex.components
+{
+	import mx.controls.dataGridClasses.DataGridColumn;
+
+	[Event(name="click",type="falsh.events.MoustEvent")]
+	public class CheckBoxHeaderColumn extends DataGridColumn
+	{
+		public function CheckBoxHeaderColumn(columnName:String=null)
+		{
+			super(columnName);
+		}
+		public var selected:Boolean;
+		
+	}
+}
