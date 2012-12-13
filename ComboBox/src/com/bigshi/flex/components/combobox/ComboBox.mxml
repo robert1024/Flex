@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" 
+				creationComplete="onCreationComplete()" layout="absolute" minWidth="955" minHeight="600">
+	<mx:Script source="./ComboBoxAS.as"/>
+	<mx:Canvas width="267" height="157" backgroundColor="#F8F2F2">
+		<mx:ComboBox x="62" y="20" width="126" height="38" dataProvider="{cbxData}"
+					 labelFunction="cbxLabelFunc" change="onChange()" id="cbx"/>
+		
+		<mx:Label id="lb" x="62" y="83" width="126" height="43" fontSize="13" text="{cbx.selectedItem.name+':'+cbx.selectedItem.age}"/>
+	</mx:Canvas>
+
+</mx:Application>
