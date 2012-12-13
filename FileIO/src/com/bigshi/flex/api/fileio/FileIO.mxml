@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" minWidth="955" minHeight="600">
+	<mx:Script source="./FileIOAS.as" />
+	<mx:Canvas x="10" y="47" width="394" height="224" backgroundColor="#FFFFFF">
+		<mx:Label x="42" y="30" width="220" height="31" fontSize="12" text="File name: {filename}"/>
+		<mx:Label x="42" y="69" width="220" height="40" fontSize="12" text="Size: {filesize}"/>
+		<mx:Button x="70" y="173" label="Browse" click="handleBrowseClick()"/>
+	</mx:Canvas>
+</mx:Application>
