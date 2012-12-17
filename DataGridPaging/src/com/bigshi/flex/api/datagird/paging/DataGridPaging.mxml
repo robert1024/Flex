@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" minWidth="955" minHeight="600" creationComplete="onCreationComplete()">
+	<mx:Script source="./DataGridPagingAS.as"/>
+	<mx:Canvas x="12" y="11" width="593" height="596" backgroundColor="#FFFFFF">
+		<mx:DataGrid x="75" y="64" width="410" dataProvider="{pageData}" rowCount="{ITEMS_PER_PAGE}">
+			<mx:columns>
+				<mx:DataGridColumn headerText="ID" dataField="id" />
+				<mx:DataGridColumn headerText="Name" dataField="name" />
+				<mx:DataGridColumn headerText="Age" dataField="age" />
+			</mx:columns>
+		</mx:DataGrid>
+		<mx:Button id="btnNextPage" x="358" y="20" label="" click="goNextPage()"
+				   icon="@Embed('next.jpg')"/>
+		<mx:Button id="btnPrePage" x="310" y="20" label="" click="goPrePage()"
+				   icon="@Embed('pre.jpg')"/>
+		<mx:Label x="406" y="22" text="Page: {currentIndex+1}/{totalPages}"/>
+	</mx:Canvas>
+</mx:Application>

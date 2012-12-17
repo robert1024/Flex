@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" minWidth="955" minHeight="600">
 	<mx:Script source="./FileIOAS.as" />
-	<mx:Canvas x="10" y="47" width="394" height="224" backgroundColor="#FFFFFF">
-		<mx:Label x="42" y="30" width="220" height="31" fontSize="12" text="File name: {filename}"/>
-		<mx:Label x="42" y="69" width="220" height="40" fontSize="12" text="Size: {filesize}"/>
-		<mx:Button x="70" y="173" label="Browse" click="handleBrowseClick()"/>
+	<mx:Canvas x="10" y="47" width="804" height="340" backgroundColor="#FFFFFF">
+		<mx:Label x="42" y="30" width="220" height="31" fontSize="12" id="fname_lb"/>
+		<mx:Label x="42" y="69" width="220" height="40" fontSize="12" id="fsize_lb" />
+		<mx:Button x="162" y="261" width="70" height="20" label="Browse" click="handleBrowseClick()"/>
+		<mx:Button x="300" y="261" width="70" height="20" label="Save" click="handleSaveClick()"/>
+		<mx:Button x="411" y="265" width="70" height="20" label="Dispaly" click="handleDisplayClick()"/>
+		<mx:DataGrid x="300" y="30" width="426" height="197" dataProvider="{dp}">
+			<mx:columns>
+				<mx:DataGridColumn dataField="ip" headerText="IP"/>
+				<mx:DataGridColumn dataField="device_name" headerText="Device Name"/>
+				<mx:DataGridColumn dataField="screen_size" headerText="Screen Size"/>
+				<mx:DataGridColumn dataField="profile" headerText="Profile Name"/>
+			</mx:columns>
+		</mx:DataGrid>
 	</mx:Canvas>
 </mx:Application>
