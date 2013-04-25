@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<actionScriptProperties analytics="false" mainApplicationPath="com/bigshi/flex/api/fileio/FileIO.mxml" projectUUID="bae8da41-e7c1-429a-822f-b6babce592d2" version="10">
+<actionScriptProperties analytics="false" mainApplicationPath="com/bigshi/flex/api/fileio/FileUpAndDown.mxml" projectUUID="bae8da41-e7c1-429a-822f-b6babce592d2" version="10">
   <compiler additionalCompilerArguments="-locale en_US" autoRSLOrdering="false" copyDependentFiles="true" fteInMXComponents="false" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="true" htmlHistoryManagement="true" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin-debug" removeUnusedRSL="true" sourceFolderPath="src" strict="true" targetPlayerVersion="10.0.0" useApolloConfig="false" useDebugRSLSwfs="true" verifyDigests="true" warn="true">
     <compilerSourcePath/>
     <libraryPath defaultLinkType="0">
@@ -14,7 +14,7 @@
     <sourceAttachmentPath/>
   </compiler>
   <applications>
-    <application path="com/bigshi/flex/api/fileio/FileIO.mxml"/>
+    <application path="com/bigshi/flex/api/fileio/FileUpAndDown.mxml"/>
   </applications>
   <modules/>
   <buildCSSFiles/>
